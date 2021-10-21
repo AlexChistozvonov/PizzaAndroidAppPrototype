@@ -1,4 +1,4 @@
-package com.example.goodandroidapplication
+package com.example.goodandroidapplication.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
+import com.example.goodandroidapplication.R
 
 
 class PreviewFragment : Fragment() {

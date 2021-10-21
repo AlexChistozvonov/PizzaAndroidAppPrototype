@@ -1,4 +1,4 @@
-package com.example.goodandroidapplication
+package com.example.goodandroidapplication.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentTransaction
+import com.example.goodandroidapplication.R
+import com.example.goodandroidapplication.data.PizzaDatabaseRepository
+import com.example.goodandroidapplication.models.PizzaInfo
+import com.example.goodandroidapplication.models.PizzaRepository
 
 
 class DetailsFragment : Fragment() {
@@ -15,7 +19,6 @@ class DetailsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val details = inflater.inflate(R.layout.fragment_details, container, false)
         val imagePreview = details?.findViewById<Button>(R.id.buttonPreview)
         imagePreview?.setOnClickListener{

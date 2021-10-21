@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import com.example.goodandroidapplication.databinding.ActivityMainBinding
+import com.example.goodandroidapplication.fragments.HomeFragment
 
 
-lateinit var binding: ActivityMainBinding
+
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(android.R.style.Theme)
         super.onCreate(savedInstanceState)
